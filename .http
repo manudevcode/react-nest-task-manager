@@ -5,7 +5,7 @@ content-type: application/json
 {
   "firstName": "El Pepe",
   "lastName": "Gómez",
-  "email": "pepe@gmail.com",
+  "email": "elpepe@gmail.com",
   "password": "12345"
 }
 
@@ -21,4 +21,13 @@ content-type: application/json
 ### Auth users
 GET http://localhost:3000/user HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDI5YjgzODMyY2NkNjViNjVkZjY2NDgiLCJlbWFpbCI6InBlcGVAZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiRWwgUGVwZSIsImxhc3ROYW1lIjoiR8OzbWV6IiwiaWF0IjoxNjEzMzQ3MTQ2LCJleHAiOjE2MTQ2NDMxNDZ9.-OZo55H3gai4T9H5aMoIZNRzvKnJWwgpPcUQKU3-o0I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVscGVwZUBnbWFpbC5jb20iLCJmaXJzdE5hbWUiOiJFbCBQZXBlIiwibGFzdE5hbWUiOiJHw7NtZXoiLCJpYXQiOjE2MjAxMDQ2MzQsImV4cCI6MTYyMTQwMDYzNH0.YTvBOPb2lSu2GHlkXj3pNnnZTgnbQWIHHOh4j7Z54aM
+
+### Create project
+POST http://localhost:3000/proyect HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVscGVwZUBnbWFpbC5jb20iLCJmaXJzdE5hbWUiOiJFbCBQZXBlIiwibGFzdE5hbWUiOiJHw7NtZXoiLCJpYXQiOjE2MjAxMDQ2MzQsImV4cCI6MTYyMTQwMDYzNH0.YTvBOPb2lSu2GHlkXj3pNnnZTgnbQWIHHOh4j7Z54aM
+
+{
+  "name": "pepe"
+}
